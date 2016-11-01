@@ -2,7 +2,6 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width">
 	<title>Document</title>
 	<style type="text/css">
 		.clearfix {
@@ -22,7 +21,7 @@
 			margin-left: 20px;
 			margin-bottom: 20px;
 		}
-		.hole {
+		.mh-hole {
 			width: 134px;
 			height: 89px;
 			background: url(images/hole2.png) no-repeat;
@@ -30,7 +29,7 @@
 			top: 42px;
 			left: 0;
 		}
-		.mouse {
+		.mh-mouse {
 			width: 134px;
 			height: 80px;
 			background: url(images/mouse1.png) no-repeat;
@@ -38,91 +37,60 @@
 			left: 0;
 			top: 40px;
 		}
-		.mouse.active {
+		.mh-mouse.active {
 			background: #f00;
 		}
 	</style>
-	<script type="text/javascript">
-	    (function() {
-	        var docElement = document.documentElement,
-	        metaElement = document.querySelector('meta[name="viewport"]'),
-	        styleElement = document.createElement("style"),
-	        version,
-	        screenScale = 1,
-	        originScreenW = 750,
-	        originScreenH = 1206,
-	        screenW = window.screen.width,
-	        screenH = window.screen.height;
-	        screenScale = parseInt(screenW) / 750;
-	        if (/Android (\d+\.\d+)/.test(navigator.userAgent)) {
-	            version = parseFloat(RegExp.$1);
-	            if (version > 2.3) {
-	                metaElement.setAttribute("content", "width=750,minimum-scale=" + screenScale + ",maximum-scale=" + screenScale + ",target-densitydpi=device-dpi")
-	            } else {
-	                metaElement.setAttribute("content", "width=750,target-densitydpi=device-dpi")
-	            }
-	        } else {
-	            metaElement.setAttribute("content", "width=750,user-scalable=no,target-densitydpi=device-dpi")
-	        }
-	        if (originScreenH * screenScale > screenH) {
-	            var scaleval, outHeight;
-	            outHeight = originScreenH * screenScale - screenH;
-	            scaleval = 1 - outHeight / screenH;
-	            docElement.firstElementChild.appendChild(styleElement);
-	            styleElement.innerHTML = ".wrapper{position: relative; top:-" + outHeight + "px; -webkit-transform: scale(" + scaleval + "," + scaleval + ");-moz-transform:scale(" + scaleval + "," + scaleval + ");-o-transform:scale3d(" + scaleval + "," + scaleval + ");transform: scale3d(" + scaleval + "," + scaleval + ");}"
-	        }
-	    })();
-	</script>
 </head>
 <body>
 	<div class="container clearfix" id="container">
 		<div class="mh-item item01">
-			<div class="mouse"></div>
-			<div class="hole"></div>
+			<div class="mh-mouse"></div>
+			<div class="mh-hole"></div>
 		</div>
 		<div class="mh-item item01">
-			<div class="mouse"></div>
-			<div class="hole"></div>
+			<div class="mh-mouse"></div>
+			<div class="mh-hole"></div>
 		</div>
 		<div class="mh-item item01">
-			<div class="mouse"></div>
-			<div class="hole"></div>
+			<div class="mh-mouse"></div>
+			<div class="mh-hole"></div>
 		</div>
 		<div class="mh-item item01">
-			<div class="mouse"></div>
-			<div class="hole"></div>
+			<div class="mh-mouse"></div>
+			<div class="mh-hole"></div>
 		</div>
 		<div class="mh-item item01">
-			<div class="mouse"></div>
-			<div class="hole"></div>
+			<div class="mh-mouse"></div>
+			<div class="mh-hole"></div>
 		</div>
 		<div class="mh-item item01">
-			<div class="mouse"></div>
-			<div class="hole"></div>
+			<div class="mh-mouse"></div>
+			<div class="mh-hole"></div>
 		</div>
 		<div class="mh-item item01">
-			<div class="mouse"></div>
-			<div class="hole"></div>
+			<div class="mh-mouse"></div>
+			<div class="mh-hole"></div>
 		</div>
 		<div class="mh-item item01">
-			<div class="mouse"></div>
-			<div class="hole"></div>
+			<div class="mh-mouse"></div>
+			<div class="mh-hole"></div>
 		</div>
 		<div class="mh-item item01">
-			<div class="mouse"></div>
-			<div class="hole"></div>
+			<div class="mh-mouse"></div>
+			<div class="mh-hole"></div>
 		</div>
 		<div class="mh-item item01">
-			<div class="mouse"></div>
-			<div class="hole"></div>
+			<div class="mh-mouse"></div>
+			<div class="mh-hole"></div>
 		</div>
 		<div class="mh-item item01">
-			<div class="mouse"></div>
-			<div class="hole"></div>
+			<div class="mh-mouse"></div>
+			<div class="mh-hole"></div>
 		</div>
 		<div class="mh-item item01">
-			<div class="mouse"></div>
-			<div class="hole"></div>
+			<div class="mh-mouse"></div>
+			<div class="mh-hole"></div>
 		</div>
 	</div>
 	<button id="start">Start</button>
