@@ -1,5 +1,5 @@
 # MouseHit
-超级打地鼠
+超级打地鼠11
 
 
 ###使用说明
@@ -20,7 +20,7 @@
 <script type="text/javascript" src="js/jquery-1.9.0.js"></script>
 <script type="text/javascript" src="js/MouseHit.js"></script>
  ````
- 
+
  - 方法调用
  ````
 var mousehit = new MouseHit(4, 3);
@@ -35,7 +35,7 @@ mousehit.init(".mh-item", {
 		console.log("打中的地鼠个数：" + this.score);
 	}
 });
-  
+
 mousehit.start({
 	gameTime: 30000,
 	gameSpeed: 30,
@@ -61,7 +61,7 @@ mousehit.start({
 		console.log("打中的地鼠个数：" + this.score);
 	}
 });
-    
+
 mousehit.finish(function() {
 	console.log("----------------求游戏快点结束！-----------")
 });
